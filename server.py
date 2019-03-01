@@ -108,7 +108,7 @@ class ServerHandler(BaseHTTPRequestHandler):
 
                 if 'files' in data:
                     compiler.add_files(data['files'])
-
+                    
                 compiler_output, pdf = compiler.compile(base64.b64decode(data['tex_source']))
             else:
                 compiler_output, pdf = compiler.compile(post_body)
