@@ -39,4 +39,5 @@ You can also POST a JSON object to the service. This allows you to pass further 
 curl -X POST -d '{"tex_source": "XGRvY3VtZW50Y2xhc3N7YXJ0aWNsZX0KXGJlZ2lue2RvY3VtZW50fQpcaW5jbHVkZXt0ZXN0L3Rlc3R9ClxlbmR7ZG9jdW1lbnR9", "files": {"test/test.tex": "aGFsbG8gd2VsdA=="}}' -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:7000/
 ```
 
-
+# Contributors
+* Original work by https://github.com/digilist/docker-latex-microservice
