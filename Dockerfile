@@ -1,11 +1,7 @@
-FROM ubuntu:xenial
-ENV DEBIAN_FRONTEND noninteractive
+FROM miktex/miktex
 
 RUN apt-get update && apt-get install -y \
-    texlive texlive-lang-english texlive-lang-german \
-    texlive-latex-base texlive-latex-recommended texlive-latex-extra \
-    texlive-xetex texlive-luatex \
-    python3.5 \
+    python3.6 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY server.py /usr/bin/latex-server
